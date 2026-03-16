@@ -25,13 +25,17 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [X] Describe the game's purpose.
+- [X] Detail which bugs you found.
+- [X] Explain what fixes you applied.
+
+ - The game is a Streamlit number-guessing app where the player guesses a secret number and receives higher/lower hints.
+ - I found three main issues: inverted hint messages, the New Game button used a hard-coded range, and core game logic was mixed into the UI file.
+ - Fixes applied: moved core logic into `logic_utils.py`, implemented and tested `check_guess()`/`parse_guess()`/`update_score()`, fixed hint text mapping in `app.py`, and ensured new games use the selected difficulty's range.
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+- [X] ![alt text](image-1.png)
 
 ## 🚀 Stretch Features
 
